@@ -1,0 +1,25 @@
+# Defaults shared by every cell.
+H: 20                  # horizon; unresolved episodes score 0
+gamma: 1.0             # evaluation discount (rewards arrive only at discharge or death)
+p_diabetes: 0.2
+
+p_u: 0.3               # P(u = 1): unrecorded fast-moving infection
+kappa: 0.5             # outcome channel: u = 1 and antibiotics off -> HR N->H, BP N->L, each w.p. kappa
+kappa_p: 0.0           # prognostic channel: u = 1 -> O2 N->L w.p. kappa_p, whatever the treatment
+
+epsilon: 0.1           # protocol = (1 - epsilon) * greedy + epsilon * uniform
+p_clip_lo: 0.05        # protocol antibiotic probability clipped before tilting
+p_clip_hi: 0.95
+vi_discount: 0.99      # value iteration for the stationary protocol (as in Oberst & Sontag)
+soften: 0.01           # mass moved off the chosen action of deterministic evaluation policies
+rl_pessimism_c: 0.5    # penalty c / sqrt(n(s, a)) for pessimistic RL
+
+n_boot: 200            # episode-level bootstrap draws
+smoothing: 0.0625      # count propensities: total pseudo-count 0.5 per state, 1/16 per action
+min_cell: 20           # visits a start cell needs before the sort uses it unpooled
+gamma_hi: 20.0         # breakdown Gamma search interval [1, gamma_hi]
+gamma_tol: 0.001
+benchmark_min_count: 20
+benchmark_quantile: 0.95
+
+root_seed: 20261102

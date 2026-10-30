@@ -1,0 +1,13 @@
+# Horizon sweep: bound coverage and width at H = 5 and 10 (H = 20 comes from the main grid).
+name: horizon
+base: base.yaml
+replicates: 100
+grids:
+  - regime: [R2]
+    lam: [0.0, 0.5, 1.0, 1.5, 2.0, 3.0]
+    H: [5, 10]
+    n: [2000]
+  - regime: [R3]
+    w: [0.0, 0.25, 0.5, 0.75, 1.0]
+    H: [5, 10]
+    n: [2000]

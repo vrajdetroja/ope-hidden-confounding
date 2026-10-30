@@ -1,0 +1,12 @@
+# make smoke: 2 cells x 3 replicates with a reduced bootstrap; exercises the whole pipeline and
+# draws a small version of the headline figure.
+name: smoke
+base: base.yaml
+replicates: 3
+overrides:
+  n_boot: 40
+grids:
+  - regime: [R1]
+    lam: [0.0, 2.0]
+    kappa_p: [1.0]
+    n: [2000]

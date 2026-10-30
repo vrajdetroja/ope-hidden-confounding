@@ -1,0 +1,24 @@
+# Main grid.
+name: main
+base: base.yaml
+replicates: 100
+grids:
+  # R1 and R2: treatment-side strength (lam -> Gamma*) x outcome-side strength (kappa_p) x n.
+  # Without a prognostic channel (kappa_p = 0) no decision can flip, even with infinite data.
+  - regime: [R1, R2]
+    lam: [0.0, 0.5, 1.0, 1.5, 2.0, 3.0]
+    kappa_p: [0.0, 0.5, 1.0]
+    n: [500, 2000, 10000]
+  - regime: [R3]
+    w: [0.0, 0.25, 0.5, 0.75, 1.0]
+    n: [500, 2000, 10000]
+  # ablation: weaker outcome channel
+  - regime: [R1, R2]
+    lam: [0.0, 0.5, 1.0, 1.5, 2.0, 3.0]
+    kappa: [0.25]
+    n: [2000]
+  # ablation: intermediate prognostic channel
+  - regime: [R1, R2]
+    lam: [0.0, 0.5, 1.0, 1.5, 2.0, 3.0]
+    kappa_p: [0.3]
+    n: [2000]
