@@ -72,4 +72,6 @@ or [table_bounds.csv](figures/table_bounds.csv).
 
 ## License
 
-MIT. The vendored simulator in `third_party/sepsis/` keeps its own MIT license.
+MIT, see [LICENSE](LICENSE). `src/ope_conf/sim/dynamics.py` ports the sim-v2 sepsis simulator of
+[clinicalml/gumbel-max-scm](https://github.com/clinicalml/gumbel-max-scm), whose MIT notice
+(Copyright (c) 2019 Michael Oberst) is kept with the original code in `third_party/sepsis/LICENSE`.
