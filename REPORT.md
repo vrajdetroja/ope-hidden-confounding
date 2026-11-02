@@ -2,7 +2,7 @@
 
 Vraj Detroja
 
-November 2026
+November 2026 · doi: [10.5281/zenodo.23881233](https://doi.org/10.5281/zenodo.23881233)
 
 ## Abstract
 
@@ -489,7 +489,8 @@ Every number in this report is computed by `make figures` from the result rows i
 stored in `figures/summary.json`, `figures/table_estimators.csv`, `figures/table_bounds.csv`,
 `figures/design_frontier.csv` and `figures/oracle_wis.csv`. Each result row records the commit of
 the code that produced it and a hash of its configuration. The commands that regenerate the rows
-are in the [README](README.md#reproduce).
+are in the [README](README.md#reproduce). The code, the result rows and this report are archived on
+Zenodo at https://doi.org/10.5281/zenodo.23881233.
 
 ## References
 

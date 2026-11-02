@@ -7,6 +7,14 @@ authors:
     given-names: Vraj
     orcid: "https://orcid.org/0009-0001-4835-4276"
 version: 1.0.0
+doi: 10.5281/zenodo.23881233
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23881233
+    description: All versions (resolves to the latest)
+  - type: doi
+    value: 10.5281/zenodo.23881234
+    description: Version 1.0.0
 license: MIT
 repository-code: "https://github.com/vrajdetroja/ope-hidden-confounding"
 url: "https://github.com/vrajdetroja/ope-hidden-confounding"

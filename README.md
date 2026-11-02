@@ -1,5 +1,7 @@
 # Breaking Point: When Hidden Confounding Flips Off-Policy Evaluation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23881233.svg)](https://doi.org/10.5281/zenodo.23881233)
+
 ![Headline figure](figures/fig1_headline.png)
 
 Off-policy evaluation (OPE) under hidden confounding, studied on the sepsis simulator of Oberst &
@@ -61,12 +63,17 @@ or [table_bounds.csv](figures/table_bounds.csv).
 
 ## Citation
 
+The code, result rows and report are archived on Zenodo. The DOI below always resolves to the
+latest version; v1.0.0 is [10.5281/zenodo.23881234](https://doi.org/10.5281/zenodo.23881234).
+
 ```bibtex
-@misc{detroja2026breakingpoint,
-  author       = {Detroja, Vraj},
-  title        = {Breaking Point: When Hidden Confounding Flips Off-Policy Evaluation},
-  year         = {2026},
-  howpublished = {\url{https://github.com/vrajdetroja/ope-hidden-confounding}}
+@software{detroja2026breakingpoint,
+  author    = {Detroja, Vraj},
+  title     = {Breaking Point: When Hidden Confounding Flips Off-Policy Evaluation},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23881233},
+  url       = {https://doi.org/10.5281/zenodo.23881233}
 }
 ```
 
