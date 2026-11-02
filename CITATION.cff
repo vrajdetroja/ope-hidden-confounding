@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them using the metadata below."
+type: software
+title: "Breaking Point: When Hidden Confounding Flips Off-Policy Evaluation"
+authors:
+  - family-names: Detroja
+    given-names: Vraj
+    orcid: "https://orcid.org/0009-0001-4835-4276"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/vrajdetroja/ope-hidden-confounding"
+url: "https://github.com/vrajdetroja/ope-hidden-confounding"
+keywords:
+  - off-policy evaluation
+  - hidden confounding
+  - sensitivity analysis
+  - marginal sensitivity model
+  - reinforcement learning
+  - causal inference
+  - sepsis simulator
+abstract: >-
+  Off-policy evaluation (OPE) is used to decide whether a treatment policy learned from hospital
+  records deserves a prospective trial, and every standard estimator assumes that the records
+  contain everything the clinicians acted on. This report studies what happens when they do not,
+  on the sepsis simulator of Oberst and Sontag (2019), extended with a hidden variable whose
+  strength is set exactly. Because the simulator is ported to an exact transition tensor, the
+  true value of every policy, the confounding strength Γ* under the marginal sensitivity model,
+  and the infinite-data limit of every estimator are computed rather than estimated. The
+  strength of confounding alone does not determine whether OPE recommends a worse policy. With
+  infinite data, the estimators prefer withholding antibiotics, which is truly worse than the
+  clinicians' policy, from Γ* = 12 when the hidden variable also worsens outcomes directly, and
+  at no Γ* up to 152 when it harms only untreated patients. With 10,000 episodes, weighted
+  importance sampling and a model-based estimate make this recommendation in 84% and 70% of
+  datasets at Γ* = 12. With 2,000 episodes or fewer, the finite-sample biases of these two
+  estimators, which have opposite signs, are as large as the confounding bias. Sharp sensitivity
+  bounds at the true Γ* cover the true value in 96% to 99.9% of confounded datasets with 10,000
+  episodes, but a breakdown-point alarm calibrated on recorded variables fires on 86% to 100% of
+  deploy decisions, with a precision no better than the base rate of wrong decisions.
